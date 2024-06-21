@@ -1,3 +1,617 @@
+@media (max-width: 480px) {
+    body
+    {
+    width: 100% ; /* Use 90% of screen. 10% is left for white space. This is floating layout*/
+    margin: 0 auto; /* not sure what auto does? */
+    display: block; /* This will make sure block level elements such as li etc stay as their block and not become inline */
+    /* text-align: center;*/
+    font-family: 'Courier New', Courier, monospace;
+    /* padding-top: 2%; */ /*If you need some distance from top to start anything*/
+    
+    }
+    
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    .skills-column {
+        flex: 0 0 48%; /* Two columns, each taking about half of the container */
+    }
+    ul.large-bullet {
+        list-style-type: none;
+        font-size: 20px;
+        margin-top: 20px;
+        padding-left: 0; /* Remove default padding */
+        font-weight:600;
+    }
+    
+    ul.sub-bullet {
+        margin-top: 0;
+        padding-left: 20px; /* Adjust padding for sub-bullets */
+        list-style-type: none;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        font-weight: 400;
+    }
+    
+    
+    
+    
+    /* Add this CSS to your existing stylesheet or home.css */
+    .content-wrapper {
+        text-align: center;
+    
+    }
+    
+    #title-wrap {
+        text-align: center;
+        margin-top: 20vh;
+    }
+    
+    #title{
+        font-size: 80px;
+        font-weight: 400;
+    }
+    
+    #title-text{
+        font-size:20px;
+        line-height: 2; /* Adjust the value to set the line height to double */
+    }
+    
+    h1 {
+        font-weight: 500;
+        font-size: 40px;
+    }
+    
+    p {
+        font-weight: 350;
+        font-size: 20px;
+        line-height: 3;
+    }
+    
+    #SRow1Rectangle1, #SRow2Rectangle1, #SRow3Rectangle1, #row4slides {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5vh;
+        min-height: 100vh;
+        margin: 0% auto 0% auto;
+        margin-bottom: 20px;
+    }
+    
+    #row4slides {
+        background-color: ghostwhite;
+        padding-top: 1%;
+        position: relative;
+    }
+    
+    .slider {
+        position: relative;
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slider-content {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+    
+    .abouttext{
+        margin-top: 10vh;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        line-height: 2.5;
+    }
+    
+    .slide {
+        display: none;
+        width: 80%;
+        height: 50%;
+        max-width: 100%;
+        border-radius: 1em;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 1.5em;
+        border: none;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent */
+        transform: translateY(-50%);
+    }
+    
+    .prev {
+        left: 5%; /* Adjust left position */
+    }
+    
+    .next {
+        right: 5%; /* Adjust right position */
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    
+    
+    /* Use the ID GorNavigate to set the styling for your navigation section or division */
+    #GorNavigate
+    {
+    width:100%;
+    
+    background-color: rgba(255, 255, 255, 0.9) ; /*I picked this color from website color-hex.com. light black due to blur etc */
+    backdrop-filter: saturate(180%) blur(20px); /* Not sure if this is doing anything */
+    
+    
+    padding: 0.5em ; /* This gives the spacing around the whole text and its boundary. 0.5em is 8px */
+    margin: 0% auto 0% auto; /* IMP: auto for margin makes this box centered. Do thisalways. Margin leaves all around the box 1%. Since width is 100% so it is not leaving margin on left/right side*/
+    text-align: center;
+    
+    position: fixed; /* IMPORTANT LEARNING: When I used this, the Box1 was going under the Navigate. But if I dont do this, my bar wont remain fixed */
+    
+    }
+    
+    #Sribbonbuffer
+    {
+    width: 100%;
+    /* padding: 0em; */
+    background-color: ghostwhite ; /* Best is to give the same as navigate bar color */
+    /* backdrop-filter: saturate(180%) blur(20px); */
+    
+    
+    
+    /* IMPPPPPPPPPPPPPP ADD Back For Margin Above Nav Bar
+    
+    /* height: 11vh; */
+    
+    
+    
+    margin: 0% 0% 0% 0%; /* Top margin is 0%, Right is 0%, Bottom is 14% so there is gap betweem nav bar and next image box, left is 0% */
+    /*position: fixed; */ /* I had to give this fixed similar to nav bar, else everything the width screws up. IMPORTANT. */
+    /* visibility: hidden; */
+    }
+    
+    
+    .sli /* This is spacing the words in the list .It leaves gap between li words. */
+    {margin-left: 10px;
+    margin-right: 10px;
+    }
+    
+    .sli
+    {
+    /* URGENT LEARNING FROM BEFORE: Awesome to use inline display for navigation */
+    display: inline; /* IMP: To show the li elements (navigation row) in a row instead of one below each other.*/
+    padding: 20px ; /* This helps in providing padding around each word of the list. */
+    /* color: white; Cannot do this here since text color is for "a" element */
+    
+    /* text-align: justify; */
+    
+    }
+    
+    a
+    {
+    color: #333333;
+    margin: auto;
+    text-align: center;
+    text-decoration: none; /* IMP: If i dont give this, then there is an underline because of href. To remove that, you have to give this under 'a' element */
+    }
+    
+    a:hover /* IMPORTANT LEANING FROM BEFORE. */
+    /* This :hover cannot be given inside li brackets.It is an event. */
+    /* when user hovers around the li elements, the color here changes to pinkinsh hexadecimal #ffcbcb */
+    {
+    color: #ffdead ;
+    }
+    
+    
+    #SohHead /* ANother leaning is: give an id to the h1 tag of sohum header. So you can only change that color instead of all h1 headers.*/
+    {
+    color: #293484;
+    }
+    
+    
+    #SContent
+    {
+    overflow: auto; /* This is important overflow forthe whole wrapper */
+    
+    }
+    
+    /* STYLING FOR CONTENT */
+    /* Styling for first row first rectangle. Its height, margin , float */
+    
+    #SRow1Rectangle1 /* Since we are using ID attribute for this rectangle, you have to call it by saying #. */
+    {
+    /*height: 60em; *//*When I left a space between 20 and em, it did not show any rectangle.*/
+    /* 20em = 320px , 45em = 720px , */
+    width: 100%; /* Like body */
+    
+    /* IMP This is how you change length of the section. */
+    max-height:200vh;
+    min-height:200vh;
+    
+    background-image: url('https://img.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg?size=626&ext=jpg&ga=GA1.1.1480204119.1718823600&semt=ais_user');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the div */
+    width: 100%; /* Adjust as necessary */
+    height: 100%; /* Adjust as necessary */
+    
+    margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so it does not overlap with my navigation*/
+    /*margin: auto;*/ /* IMP: This will make this box centered. By making margin for both left-margin and right-margin to auto */
+    /* padding-top: 2.9%; */ /*IMP: This top padding is needed else my navigation bar and Rectangle 1 will overlap. This is needed since I made my navigation bar sticky by making my navigation bar 'Fixed position' */
+    /* Now if you give top padding to this rectangle, all rectangles below should also be giving some padding so they dont overlap */
+    
+    }
+    
+    .profile-image {
+        max-width: 100%;
+        height: 50%;
+        border-radius: 5em; /* Makes the image round */
+        border: 30px solid rgba(248, 248, 255, 0.3);
+        margin-top: 15vh; /* Adjust margin as needed */
+    }
+    
+    .art-image {
+        max-width: 100%;
+        height: 50%;
+        border-radius: 5em; /* Makes the image round */
+        border: 30px solid rgba(231, 231, 231, 0.3);
+        margin-top: 10vh; /* Adjust margin as needed */
+    }
+    
+    .school-image {
+        max-width: 100%;
+        height: 50%;
+        border-radius: 5em; /* Makes the image round */
+        border: 30px solid rgba(248, 248, 255, 0.3);
+        margin-top: 15vh; /* Adjust margin as needed */
+    }
+    
+    
+    .phs-image {
+        max-width: 100%;
+        max-height: 40%;
+        border-radius: 5em; /* Makes the image round */
+        border: 30px solid rgba(213, 213, 213, 0.2);
+        margin-top: 15vh; 
+        /* Adjust margin as needed */
+    }
+    
+    .math-image {
+        max-width: 80%;
+        max-height: 70%;
+        border-radius: 4em; /* Makes the image round */
+        border: 30px solid rgba(161, 161, 161, 0.2);
+        margin-top: 6vh; 
+        /* Adjust margin as needed */
+    }
+    
+    .tennis-image {
+        max-width: 60%;
+        max-height: 20%;
+        border-radius: 4em; /* Makes the image round */
+        border: 30px solid rgba(161, 161, 161, 0.2);
+        margin-top: 4vh; 
+        margin-bottom: 5vh;
+        /* Adjust margin as needed */
+    }
+    
+    .wheel-image {
+        max-width: 60%;
+        max-height: 60%;
+        border-radius: 4em; /* Makes the image round */
+        border: 30px solid rgba(161, 161, 161, 0.2);
+        margin-top: 4vh; 
+        margin-bottom: 5vh;
+        /* Adjust margin as needed */
+    }
+    
+    .frogger-image {
+        max-width: 80%;
+        max-height:80%;
+        border-radius: 4em; /* Makes the image round */
+        border: 30px solid rgba(161, 161, 161, 0.2);
+        margin-top: 1vh; 
+        /* Adjust margin as needed */
+    }
+    
+    .sundling-image {
+        max-width: 100%;
+        height: 32%;
+        border-radius: 4em; /* Makes the image round */
+        border: 30px solid rgba(161, 161, 161, 0.2);
+        margin-top: 10vh; 
+        /* Adjust margin as needed */
+    }
+    
+    .walk-image {
+        max-width: 100%;
+        height: 32%;
+        border-radius: 4em; /* Makes the image round */
+        border: 30px solid rgba(161, 161, 161, 0.2);
+        margin-top: 10vh; 
+        /* Adjust margin as needed */
+    }
+    
+    .sql-image {
+        max-width: 100%;
+        height: 32%;
+        border-radius: 4em; /* Makes the image round */
+        border: 30px solid rgba(248, 248, 255, 0.3);
+        margin-top: 10vh; 
+        /* Adjust margin as needed */
+    }
+    
+    .acs-image {
+        max-width: 40vh;
+        height: 15vh;
+        margin-left: 5vh;
+        /* Adjust margin as needed */
+    
+    }
+    
+    .pld-image {
+        max-width: 40vh;
+        height: 15vh;
+        margin-left: 5vh;
+        /* Adjust margin as needed */
+    
+    }
+    
+    .acs{
+        display: flex;
+        align-items: center; 
+    }
+    
+    .tennisbutton{
+        padding: 1.2em;
+        border-color: transparent;
+        margin-top: 6vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        border-radius: 0.2em;
+        background-color: rgba(51, 51, 51, 0.8);
+    }
+    
+    .wheelbutton{
+        padding: 1.2em;
+        border-color: transparent;
+        margin-top: 3vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+        font-size: 18px;
+        border-radius: 0.2em;
+        background-color: rgba(51, 51, 51, 0.8);
+    }
+    
+    .class-titles{
+        list-style-type: none;
+        font-weight: 500;
+    }
+    
+    .class-list{
+        list-style-type: none;
+        text-align: left;
+        margin-right: 1em;
+        line-height: 2;
+    }
+    
+    .mathteam{
+        text-align: left;
+        font-size: 16px;
+        line-height: 2;
+        margin-left: 1.5em;
+        margin-right: 1em;
+    }
+    
+    .volunteertext{
+        margin-top: 10vh;
+        text-align: left;
+        font-size: 20px;
+        line-height: 2;
+        margin-left: 1.5em;
+        margin-right: 1em;
+    }
+    
+    
+    .wheeltext{
+        text-align: left;
+        font-size: 16px;
+        line-height: 2;
+        margin-left: 2em;
+        margin-right: 1.5em;
+    }
+    
+    
+    .button {
+        padding: 1.2em;
+        border-color: transparent;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        border-radius: 0.2em;
+        background-color: rgba(51, 51, 51, 0.8);
+    
+    }
+    
+    .volunteer-title {
+        text-align: left;
+        margin-left: 1em;
+    }
+    
+    
+    
+    #button-text {
+        color: ghostwhite;
+    }
+    
+    #SRow2Rectangle1 /* Since we are using ID attribute for this rectangle, you have to call it by saying #. */
+    {
+    /* height: 60em;*/ /*When I left a space between 20 and em, it did not show any rectangle.*/
+    /* 20em = 320px , 45em = 720px , */
+    width: 100%; /* Like body */
+    max-height: 200vh;
+    background-color:ghostwhite;
+    margin: 0% auto 0% auto;
+    margin-bottom: 20px;
+    /* margin: auto; */ /* IMP: This will make this box centered. By making margin for both left-margin and right-margin to auto */
+    
+    /* padding-top: 1%; */
+    }
+    
+    
+    
+    #SRow3Rectangle1 /* Since we are using ID attribute for this rectangle, you have to call it by saying #. */
+    {
+    /* height: 60em;*/ /*When I left a space between 20 and em, it did not show any rectangle.*/
+    /* 20em = 320px , 45em = 720px , */
+    width: 100%; /* Like body */
+    max-height: 200vh;
+    background-color:ghostwhite;
+    background-image: url('https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117275.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the div */
+    width: 100%; /* Adjust as necessary */
+    height: 100%; /* Adjust as necessary */
+    margin: 0% auto 0% auto; /* IMP: This will make this box centered. By making margin for both left-margin and right-margin to auto */
+    margin-bottom: 20px;
+    /* padding-top: 5%; */
+    }
+    
+    #SRow4Boxes{
+        display: flex; /* Flexbox layout */
+        justify-content: space-between; /* Distribute items evenly */
+        margin-bottom: 20px;
+    }
+    
+    
+    #SRow4Rectangle1
+    {
+    /*height: 30em;*/
+    max-height: 100vh;
+    min-height: 110vh;
+    background-color: ghostwhite;
+    width: 50%;
+    
+    /* margin takes 4 values. Starts with top, right, bottom and left. margin: */
+    margin-right: 0.5em; /* I gave this to distinguish between these two rectangles since their background colors are same */
+    margin-left: 1em;
+    float: left; /* Float left makes two boxes to be inline meaning next to each other */
+    
+    /* padding-top: 0.5%; */
+    }
+    #SRow4Rectangle2
+    {
+    max-height: 100vh;
+    min-height: 110vh;
+    /* height: 30em; */
+    
+    background-color:ghostwhite;
+    width: 50%;
+    
+    /* margin takes 4 values. Starts with top, right, bottom and left. margin: */
+    margin-left: 0.5em; /* I gave this to distinguish between these two rectangles since their background colors are same */
+    margin-right: 1em;
+    float: left; /* Float left makes two boxes to be inline meaning next to each other */
+    /* padding-top: 0.5%; */
+    
+    }
+    
+    
+    /*FOOTER SYTLING */
+    #Sfooter
+    {
+    padding: 0.5em; /*this will create small rectangular thin box*/
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8) ; /*I picked this color from website color-hex.com. light black due to blur etc */
+    backdrop-filter: saturate(180%) blur(20px); /* Not sure if this is doing anything */
+    margin: 0% auto auto auto;
+    color: white;
+    font-weight: 400;
+    }
+    
+    .SImageR1C1
+    {
+    width: 100%;
+    /*max-width: 100%;
+    /*height: 60em; */ /* this is fixed height as such when viewed on mobile, it could be squeezed */
+    
+    /* Following is for responsive design for mobile or ipad when the width is smaller in mobiles */
+    /* max-width: 100%; */
+    /*height:auto;*/
+    
+    /* IMPORTANT LEARNING:To make an image inside a container to be centered, its margin left and margin right should be auto and its display has to be a block.*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* ABOVE THREE NEEDED TO MAKE AN IMAGE CENTERED INSIDE ITS RECTANGLE */
+    
+    max-height: 100vh; /* IMP: The VH called viewport height is what gives the flexible height and does NOT shrink the picture on mobile screens.
+    This is very important. Width should be 100% and height 100vh to fill the whole height whether it is desktop or mobile */
+    
+    
+    
+    }
+    
+    .SImageR2C1 , .SImageR4C1, .SImageR4C2, .SImageR3C1
+    {
+    width: 100%;
+    /* height: 950px; */
+    /*max-width: 100%;*/
+    max-height: 100vh; /* IMP: The VH called viewport height is what gives the flexible height and does NOT shrink the picture on mobile screens.
+    This is very important. Width should be 100% and height 100vh to fill the whole height whether it is desktop or mobile */
+    /* Since there are two images next to each other on Row 4, make sure the pictures of these two are same size. Save them as same size else one will take more space, other can be small. */
+    max-width: 100%;
+    
+    }
+    
+    
+    
+    
+    /*Image Styling*/
+    /*.SImage1
+    {
+    width: 1950px;
+    height: 45em;
+    
+    
+    }*/
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 body
 {
 width: 100% ; /* Use 90% of screen. 10% is left for white space. This is floating layout*/
