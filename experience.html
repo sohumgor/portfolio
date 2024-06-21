@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohum Gorladku</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="GorHeader">
+    <div id="GorNavigate">
+        <ul class="sul">
+            <li class="sli"><a href="index.html">Home</a></li>
+            <li class="sli"><a href="school.html">School</a></li>
+            <li class="sli"><a href="projects.html">Projects</a></li>
+            <li class="sli"><a href="experience.html">Experience</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="SContent">
+    <div id="SRow1Rectangle1">
+        <div id="title-wrap" class="content-wrapper">
+            <h1 id="title">Discover my Experience</h1>
+            <p id="title-text">I have grown my skillset and gained exposure by volunteering for local non-profit organizations. </p>
+            <img src="https://images.fastcompany.com/image/upload/f_auto,c_fit,w_3840,q_auto/fc/3060902-poster-p-1-why-volunteering-is-the-single-most-overlooked-skill-on-resumes.jpg" alt="Palatine High School" class="school-image">
+        </div>
+    </div>
+
+    <div id="SRow2Rectangle1" style="max-height: 140vh;">
+        <div class="content-wrapper">
+            <div class="acs">
+                <h1 class="volunteer-title">American Cancer Society</h1>
+                <a href="https://www.cancer.org/involved/fundraise/relay-for-life.html" class="acs-image" target="_blank">
+                    <img src="https://1000logos.net/wp-content/uploads/2023/02/American-Cancer-Society-logo.png" alt="ACS" class="acs-image">
+                </a>
+            </div>
+            <p class="volunteertext">I managed and promoted the American Cancer Society's Scavenger Hunt at the 2022 Relay For Life, ensuring high participation. I clearly explained the activity to children, showcasing strong communication and problem-solving skills. <br><br> I learned to show compassion, handle unforeseen circumstances, and communicate effectively with children.</p>
+            <img src="https://www.carnivalfoundation.com/wp-content/uploads/2019/11/0518-2019-2020-Carnival-RFL-1.jpg" alt="Cancer Society" class="walk-image">
+        </div>
+    </div>
+
+    <div id="SRow3Rectangle1" style="min-height: 150vh;">
+        <div class="content-wrapper">
+            <div class="acs" >
+                <h1 class="volunteer-title" style="text-align: left; margin-left: 1em;">Palatine Library District</h1>
+                <a href="https://www.goodreads.com/user/show/82035043-palatine-library" class="pld-image" target="_blank">
+                    <img src="https://www.palatinelibrary.org/sites/default/files/PLDLogo1200x630.png" alt="PLD" class="acs-image">
+                </a>
+            </div>
+            <p class="volunteertext">I wrote twelve detailed book reviews for the Palatine Public Library's Goodreads page, helping youth readers select books. <br><br> I improved my writing and analytical skills by creating engaging, spoiler-free summaries and critiques.</p>
+            <br>
+            <div class="slider">
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <div class="slider-content">
+                    <img src="rev1.png" class="slide" alt="Review 1">
+                    <img src="rev2.png" class="slide" alt="Review 2">
+                    <img src="rev3.png" class="slide" alt="Review 3">
+                    <img src="rev4.png" class="slide" alt="Review 4">
+                    <img src="rev5.png" class="slide" alt="Review 5">
+                    <img src="rev6.png" class="slide" alt="Review 6">
+                </div>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+        
+        </div>
+    </div>
+
+
+</div>
+
+<div id="Sfooter">
+    <p>&copy; Sohum Gorladku Copyright 2020</p>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+
+</script>
+</body>
+</html>
