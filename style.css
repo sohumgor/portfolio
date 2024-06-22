@@ -239,6 +239,12 @@ position: fixed; /* IMPORTANT LEARNING: When I used this, the Box1 was going und
 
 }
 
+@media screen and (max-width: 767px) {
+    #GorNavigate {
+        padding: 0;
+    }
+}
+
 
 #Sribbonbuffer
 {
@@ -266,6 +272,9 @@ margin: 0% 0% 0% 0%; /* Top margin is 0%, Right is 0%, Bottom is 14% so there is
 margin-right: 10px;
 }
 
+.sul {
+    justify-content: center;
+}
 .sli
 {
 /* URGENT LEARNING FROM BEFORE: Awesome to use inline display for navigation */
@@ -278,25 +287,16 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 }
 
 @media screen and (max-width: 767px) {
-    #GorNavigate {
-        padding: 0;
-    }
-    
     .sul {
-        display: inline-block;
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
-
-    .sli {
-        display: inline-block;
-        width: auto; /* Allow items to be inline */
-        padding: 5px 10px; /* Reduced padding for mobile */
-        font-size: 10px; /* Reduced font size for mobile */
-        margin: 0 3px; /* Adjust margin for spacing between items */
+    .sil {
+        padding: 5px;
+        font-size: 10px;
     }
 }
-
-
 
 
 a
