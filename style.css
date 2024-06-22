@@ -239,21 +239,6 @@ position: fixed; /* IMPORTANT LEARNING: When I used this, the Box1 was going und
 
 }
 
-@media screen and (max-width: 767px) {
-    #GorNavigate {
-    width:100%;
-
-    background-color: rgba(255, 255, 255, 0.9) ; /*I picked this color from website color-hex.com. light black due to blur etc */
-    backdrop-filter: saturate(180%) blur(20px); /* Not sure if this is doing anything */
-
-
-    padding: 0px ; /* This gives the spacing around the whole text and its boundary. 0.5em is 8px */
-    margin: 0% auto 0% auto; /* IMP: auto for margin makes this box centered. Do thisalways. Margin leaves all around the box 1%. Since width is 100% so it is not leaving margin on left/right side*/
-    text-align: center;
-
-    position: fixed; /* IMPORTANT LEARNING: When I used this, the Box1 was going under the Navigate. But if I dont do this, my bar wont remain fixed */
-    }
-}
 
 #Sribbonbuffer
 {
@@ -293,16 +278,21 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 }
 
 @media screen and (max-width: 767px) {
+    #GorNavigate {
+        padding: 0;
+    }
+    
     .sul {
-    display: inline;/* Stack items vertically on small screens */
-    width: 100%; /* Make sure the container takes the full width */
+        display: inline-block;
+        width: 100%;
     }
 
-    .sil {
-    width: 100%; /* Make sure each item takes the full width */
-    padding: 5px; /* Adjust padding for better spacing */
-    font-size: 12px;
-
+    .sli {
+        display: inline-block;
+        width: auto; /* Allow items to be inline */
+        padding: 5px 10px; /* Reduced padding for mobile */
+        font-size: 10px; /* Reduced font size for mobile */
+        margin: 0 3px; /* Adjust margin for spacing between items */
     }
 }
 
@@ -367,6 +357,8 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 @media screen and (max-width: 767px) {
     #SRow1Rectangle1{
     max-height:100vh
+    min-height:100vh
+    height: 100%;
     }
 }
 
@@ -537,6 +529,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
         max-height: 300px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        border-radius: 2px;
         border: none;
     }
 
@@ -546,6 +539,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
         max-height: 300px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        border-radius: 2px;
         border: none;
     }
 
@@ -692,8 +686,8 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     text-align: left;
     font-size: 12px;
     line-height: 2;
-    margin-left: 4px;
-    margin-right: 3px;
+    margin-left: 7px;
+    margin-right: 4px;
     }
 }
 
@@ -710,7 +704,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     text-align: left;
     font-size: 12px;
     line-height: 1.5;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-right: 2px;
     }
 }
