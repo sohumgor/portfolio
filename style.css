@@ -292,13 +292,15 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 }
 
 @media screen and (max-width: 767px) {
-
+    .sul {
+        padding:5px;
+    }
     .sli {
         display: inline-block;
         width: auto; /* Allow items to be inline */
         font-size: 10px; /* Reduced font size for mobile */
         margin: 0 3px; /* Adjust margin for spacing between items */
-        padding: 5px;
+        padding: 5px 10px;
     }
 }
 
