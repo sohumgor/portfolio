@@ -591,6 +591,31 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     background-color: rgba(51, 51, 51, 0.8);
 }
 
+@media screen and (max-width: 767px) {
+.tennisbutton{
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5px;
+    border-radius: 0.2em;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+.wheelbutton{
+    padding: 5px;
+    border-color: transparent;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-size: 8px;
+    border-radius: 0.2em;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+}
+
 .class-titles{
     font-weight: 500;
     font-size: 20px;
@@ -678,6 +703,19 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     border-radius: 0.2em;
     background-color: rgba(51, 51, 51, 0.8);
 
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    padding: 5px;
+    border:none;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8px;
+    border-radius: 0.2em;
+    background-color: rgba(51, 51, 51, 0.8);
+    }
 }
 
 .volunteer-title {
