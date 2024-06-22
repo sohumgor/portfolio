@@ -38,7 +38,33 @@ ul.sub-bullet {
     font-weight: 400;
 }
 
-
+@media screen and (max-width: 767px) {
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .skills-column {
+        flex: 0 0 48%; /* Two columns, each taking about half of the container */
+    }
+    ul.large-bullet {
+        list-style-type: none;
+        font-size: 14px;
+        margin-top: 20px;
+        padding-left: 0; /* Remove default padding */
+        font-weight:550;
+    }
+    
+    ul.sub-bullet {
+        margin-top: 0;
+        padding-left: 12px; /* Adjust padding for sub-bullets */
+        list-style-type: none;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        font-weight: 400;
+    }
+}
 
 
 /* Add this CSS to your existing stylesheet or home.css */
@@ -424,7 +450,90 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 }
 
 @media screen and (max-width: 767px) {
-    img {
+    .profile-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .school-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .phs-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .art-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+    .math-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .tennis-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .wheel-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .frogger-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .sundling-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .sql-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .acs-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .pld-image {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+
+    .walk-image {
         max-width: 90%; /* Maximum width for mobile devices */
         max-height: 300px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
@@ -486,8 +595,8 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     text-align: left;
     font-size: 12px;
     line-height: 1.5;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 4px;
+    margin-right: 3px;
     }
 }
 
@@ -505,8 +614,8 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     text-align: left;
     font-size: 12px;
     line-height: 2;
-    margin-left: 1.5em;
-    margin-right: 1em;
+    margin-left: 4px;
+    margin-right: 3px;
     }
 }
 
