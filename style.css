@@ -125,7 +125,6 @@ p {
     justify-content: center;
     text-align: center;
     padding-top: 5vh;
-    min-height: 100vh;
     margin: 0% auto 0% auto;
     margin-bottom: 20px;
 }
@@ -787,7 +786,7 @@ margin-bottom: 20px;
 
 @media screen and (max-width: 767px) {
         #Row2Rectangle1 {
-            max-height: 100px;
+            min-height: 100vh;
         }
 }
 
@@ -810,8 +809,8 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
-        #Row2Rectangle1 {
-            max-height: 100px;
+        #Row3Rectangle1 {
+            max-height: 50vh;
         }
 }
 
