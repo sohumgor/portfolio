@@ -531,6 +531,8 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         border-radius: 4px;
         border: none;
+        display: block;
+        margin: 10px auto;
     }
 
     .tennis-image {
@@ -782,7 +784,11 @@ margin-bottom: 20px;
 /* padding-top: 1%; */
 }
 
-
+@media screen and (max-width: 767px) {
+        #Row2Rectangle1 {
+            max-height: 100px;
+        }
+}
 
 #SRow3Rectangle1 /* Since we are using ID attribute for this rectangle, you have to call it by saying #. */
 {
@@ -800,6 +806,12 @@ height: 100%; /* Adjust as necessary */
 margin: 0% auto 0% auto; /* IMP: This will make this box centered. By making margin for both left-margin and right-margin to auto */
 margin-bottom: 20px;
 /* padding-top: 5%; */
+}
+
+@media screen and (max-width: 767px) {
+        #Row2Rectangle1 {
+            max-height: 100px;
+        }
 }
 
 #SRow4Boxes{
