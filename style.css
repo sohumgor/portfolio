@@ -57,6 +57,7 @@ ul.sub-bullet {
     font-weight: 400;
 }
 
+
 #title-text{
     font-size:20px;
     line-height: 2; /* Adjust the value to set the line height to double */
@@ -67,6 +68,7 @@ h1 {
     font-size: 40px;
 }
 
+
 p {
     font-weight: 350;
     font-size: 20px;
@@ -74,6 +76,18 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+    #title {
+        font-size:25px;
+    }
+    
+    #title-text {
+        font-size:14px;
+    }
+    
+    h1 {
+        font-size:20px;
+    }
+    
     p {
         font-size:12px;
         line-height: 2;
@@ -90,6 +104,7 @@ p {
     margin: 0% auto 0% auto;
     margin-bottom: 20px;
 }
+
 
 #row4slides {
     background-color: ghostwhite;
@@ -218,7 +233,9 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 
 @media screen and (max-width: 767px) {
     .sul{
-        display:inline;
+        display: inline;
+        text-align:left;
+        margin-left:5px;
     }
     .sli a {
 
@@ -296,15 +313,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-top: 15vh; /* Adjust margin as needed */
 }
 
-@media screen and (max-width: 767px) {
-    .profile-image {
-        max-width: 90%; /* Maximum width for mobile devices */
-        max-height: 300px; /* Maximum height for mobile devices */
-        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
-        height: auto;
-    }
-        
-}
+
 
 .art-image {
     max-width: 100%;
@@ -314,15 +323,6 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-top: 10vh; /* Adjust margin as needed */
 }
 
-@media screen and (max-width: 767px) {
-    .art-image {
-        max-width: 90%; /* Maximum width for mobile devices */
-        max-height: 300px; /* Maximum height for mobile devices */
-        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
-        height: auto;
-    }
-        
-}
 
 .school-image {
     max-width: 100%;
@@ -332,15 +332,6 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-top: 15vh; /* Adjust margin as needed */
 }
 
-@media screen and (max-width: 767px) {
-    .school-image {
-        max-width: 90%; /* Maximum width for mobile devices */
-        max-height: 300px; /* Maximum height for mobile devices */
-        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
-        height: auto;
-    }
-        
-}
 
 .phs-image {
     max-width: 100%;
@@ -432,6 +423,15 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 }
 
+@media screen and (max-width: 767px) {
+    img {
+        max-width: 90%; /* Maximum width for mobile devices */
+        max-height: 300px; /* Maximum height for mobile devices */
+        width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+    }
+}
+
 .acs{
     display: flex;
     align-items: center; 
@@ -470,6 +470,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     text-align: left;
     margin-right: 1em;
     line-height: 2;
+    font-weigt: 400;
 }
 
 .mathteam{
@@ -480,6 +481,16 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-right: 1em;
 }
 
+@media screen and (max-width: 767px) {
+    .mathteam{
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+}
+
 .volunteertext{
     margin-top: 10vh;
     text-align: left;
@@ -488,7 +499,16 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-left: 1.5em;
     margin-right: 1em;
 }
-
+@media screen and (max-width: 767px) {
+    .volunteertext {
+    margin-top: 5px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 2;
+    margin-left: 1.5em;
+    margin-right: 1em;
+    }
+}
 
 .wheeltext{
     text-align: left;
@@ -498,6 +518,15 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-right: 1.5em;
 }
 
+@media screen and (max-width: 767px) {
+    .wheeltext{
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+}
 
 .button {
     padding: 1.2em;
