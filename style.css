@@ -803,6 +803,10 @@ margin-bottom: 20px;
             min-height: 110vh;
         }
 
+        #class-div {
+            min-height: 110vh;
+        }
+
 }
 
 #SRow3Rectangle1 /* Since we are using ID attribute for this rectangle, you have to call it by saying #. */
