@@ -360,19 +360,15 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 @media screen and (max-width: 767px) {
     #SRow1Rectangle1{
-    min-height: 100vh;
+    min-height: 110vh;
     }
 
     #SRow4Rectangle1{
-    max-height:60vh
-    min-height:60vh
-    height: 100%;
+    min-height:80vh;
     }
 
     #SRow4Rectangle2{
-    max-height:60vh
-    min-height:60vh
-    height: 100%;
+    min-height:100vh;
     }
 }
 
@@ -547,7 +543,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     .wheel-image {
         max-width: 60%; /* Maximum width for mobile devices */
         max-height: 300px; /* Maximum height for mobile devices */
-        margin-top: 10px;
+        margin-top: 15px;
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         border-radius: 4px;
@@ -561,7 +557,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         margin-top: 10px;
-        border-radius: 2px;
+        border-radius: 4px;
         border: none;
     }
 
@@ -786,7 +782,7 @@ margin-bottom: 20px;
 
 @media screen and (max-width: 767px) {
         #Row2Rectangle1 {
-            min-height: 100vh;
+            min-height: 110vh;
         }
 }
 
@@ -810,7 +806,7 @@ margin-bottom: 20px;
 
 @media screen and (max-width: 767px) {
         #Row3Rectangle1 {
-            max-height: 50vh;
+            min-height: 110vh;
         }
 }
 
