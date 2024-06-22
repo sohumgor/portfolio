@@ -1,20 +1,5 @@
-@media (max-width: 480px) {
-    
-    body{
-    width: 100% ; /* Use 90% of screen. 10% is left for white space. This is floating layout*/
-    margin: 0 auto; /* not sure what auto does? */
-    display: block; /* This will make sure block level elements such as li etc stay as their block and not become inline */
-    /* text-align: center;*/
-    font-family: 'Courier New', Courier, monospace;
-    /* padding-top: 2%; */ /*If you need some distance from top to start anything*/
-    
-    }
-    
-}
 
-
-body
-{
+body {
 width: 100% ; /* Use 90% of screen. 10% is left for white space. This is floating layout*/
 margin: 0 auto; /* not sure what auto does? */
 display: block; /* This will make sure block level elements such as li etc stay as their block and not become inline */
@@ -222,6 +207,15 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 /* text-align: justify; */
 
 }
+
+@media screen and (max-width: 767px) {
+    .sli a {
+        color: blue; /* Color for mobile devices */
+    }
+}
+
+
+
 
 a
 {
