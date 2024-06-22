@@ -239,6 +239,22 @@ position: fixed; /* IMPORTANT LEARNING: When I used this, the Box1 was going und
 
 }
 
+@media screen and (max-width: 767px) {
+    #GorNavigate {
+    width:100%;
+
+    background-color: rgba(255, 255, 255, 0.9) ; /*I picked this color from website color-hex.com. light black due to blur etc */
+    backdrop-filter: saturate(180%) blur(20px); /* Not sure if this is doing anything */
+
+
+    padding: 0px ; /* This gives the spacing around the whole text and its boundary. 0.5em is 8px */
+    margin: 0% auto 0% auto; /* IMP: auto for margin makes this box centered. Do thisalways. Margin leaves all around the box 1%. Since width is 100% so it is not leaving margin on left/right side*/
+    text-align: center;
+
+    position: fixed; /* IMPORTANT LEARNING: When I used this, the Box1 was going under the Navigate. But if I dont do this, my bar wont remain fixed */
+    }
+}
+
 #Sribbonbuffer
 {
 width: 100%;
@@ -278,13 +294,14 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 
 @media screen and (max-width: 767px) {
     .sul {
-    flex-direction: column; /* Stack items vertically on small screens */
+    display: inline;/* Stack items vertically on small screens */
     width: 100%; /* Make sure the container takes the full width */
     }
 
     .sil {
     width: 100%; /* Make sure each item takes the full width */
-    padding: 15px 0; /* Adjust padding for better spacing */
+    padding: 5px; /* Adjust padding for better spacing */
+    font-size: 12px;
 
     }
 }
@@ -500,31 +517,36 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
     }
     .math-image {
-        max-width: 90%; /* Maximum width for mobile devices */
+        max-width: 60%; /* Maximum width for mobile devices */
         max-height: 300px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        border: none;
     }
 
     .tennis-image {
-        max-width: 90%; /* Maximum width for mobile devices */
+        max-width: 60%; /* Maximum width for mobile devices */
         max-height: 300px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        border: none;
     }
 
     .wheel-image {
-        max-width: 90%; /* Maximum width for mobile devices */
+        max-width: 60%; /* Maximum width for mobile devices */
         max-height: 300px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        border: none;
     }
 
+
     .frogger-image {
-        max-width: 90%; /* Maximum width for mobile devices */
+        max-width: 60%; /* Maximum width for mobile devices */
         max-height: 300px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
+        border: none;
     }
 
     .sundling-image {
@@ -542,15 +564,15 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     }
 
     .acs-image {
-        max-width: 90%; /* Maximum width for mobile devices */
-        max-height: 300px; /* Maximum height for mobile devices */
+        max-width: 40%; /* Maximum width for mobile devices */
+        max-height: 100px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
     }
 
     .pld-image {
-        max-width: 90%; /* Maximum width for mobile devices */
-        max-height: 300px; /* Maximum height for mobile devices */
+        max-width: 40%; /* Maximum width for mobile devices */
+        max-height: 100px; /* Maximum height for mobile devices */
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
     }
@@ -598,7 +620,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 5px;
+    font-size: 8px;
     border-radius: 0.2em;
     background-color: rgba(51, 51, 51, 0.8);
 }
