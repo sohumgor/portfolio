@@ -210,9 +210,12 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 
 @media screen and (max-width: 767px) {
     .sli a {
+        display:inline;
         padding:5px;
         font-size:12px;
         color: blue; /* Color for mobile devices */
+        margin-left:3px;
+        margin-right:3px;
     }
 }
 
