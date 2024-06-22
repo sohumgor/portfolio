@@ -156,6 +156,25 @@ p {
     width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+    .slider {
+        width: 100%;
+    }
+
+    .slide-content {
+        width: 100%;
+    }
+
+    .slide-content img {
+        max-width: 90%; /* Ensures the image doesn't take more than 90% of the screen width */
+        max-height: 300px; /* Sets a maximum height for the image */
+        width: auto; /* Maintains the aspect ratio */
+        height: auto; /* Maintains the aspect ratio */
+        border-radius: 20px; /* Keeps rounded corners */
+        border: 5px solid ghostwhite; /* Keeps the thick ghost grey border */
+    }
+}
+
 .abouttext{
     margin-top: 10vh;
     margin-left: 5vh;
@@ -258,18 +277,15 @@ padding: 20px ; /* This helps in providing padding around each word of the list.
 }
 
 @media screen and (max-width: 767px) {
-    .sul{
-        display: inline;
-        text-align:left;
-        margin-left:5px;
+    .sul {
+    flex-direction: column; /* Stack items vertically on small screens */
+    width: 100%; /* Make sure the container takes the full width */
     }
-    .sli a {
 
-        padding:5px;
-        font-size:12px;
-        color: blue; /* Color for mobile devices */
-        margin-left:3px;
-        margin-right:3px;
+    .sil {
+    width: 100%; /* Make sure each item takes the full width */
+    padding: 15px 0; /* Adjust padding for better spacing */
+
     }
 }
 
@@ -329,6 +345,12 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 /* padding-top: 2.9%; */ /*IMP: This top padding is needed else my navigation bar and Rectangle 1 will overlap. This is needed since I made my navigation bar sticky by making my navigation bar 'Fixed position' */
 /* Now if you give top padding to this rectangle, all rectangles below should also be giving some padding so they dont overlap */
 
+}
+
+@media screen and (max-width: 767px) {
+    #SRow1Rectangle1{
+    max-height:100vh
+    }
 }
 
 .profile-image {
@@ -570,17 +592,22 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 }
 
 .class-titles{
-    list-style-type: none;
     font-weight: 500;
+    font-size: 20px;
 }
 
 .class-list{
-    list-style-type: none;
-    text-align: left;
-    margin-right: 1em;
+
+    margin-right: 5vh;
     line-height: 2;
-    font-weigt: 400;
 }
+
+.classes{
+    text-align: left;
+    margin-left: 5vh;
+    line-height: 2;
+}
+
 
 .mathteam{
     text-align: left;
@@ -591,6 +618,10 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 }
 
 @media screen and (max-width: 767px) {
+    .class-titles{
+        font-size: 16px;
+    }
+    
     .mathteam{
     text-align: left;
     font-size: 12px;
