@@ -110,10 +110,12 @@ p {
     }
     
     h1 {
+        margin-top:5px;
         font-size:20px;
     }
 
     .split-text {
+        margin-top: 10px;
         font-size: 16px;
         font-weight: 500;
     }
@@ -397,8 +399,8 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 }
 
 .experience-image {
-    max-width: 70%;
-    height: 50%;
+    max-width: 50%;
+    height: 40%;
     border-radius: 5em; /* Makes the image round */
     border: 30px solid rgba(248, 248, 255, 0.3);
     margin-top: 15vh; /* Adjust margin as needed */
@@ -461,7 +463,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 }
 
 .walk-image {
-    max-width: 90%;
+    max-width: 70%;
     height: 32%;
     border-radius: 4em; /* Makes the image round */
     border: 30px solid rgba(161, 161, 161, 0.2);
@@ -532,7 +534,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     .math-image {
         max-width: 60%; /* Maximum width for mobile devices */
         max-height: 300px; /* Maximum height for mobile devices */
-        margin-top: 10px;
+        margin-top: 17px;
         width: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         height: auto; /* Ensures image doesn't stretch beyond aspect ratio */
         border-radius: 4px;
