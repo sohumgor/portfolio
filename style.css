@@ -8,7 +8,7 @@ display: block; /* This will make sure block level elements such as li etc stay 
 font-family: "San Francisco Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     /* text-align: center;*/
 /* padding-top: 2%; */ /*If you need some distance from top to start anything*/
-color: blue;
+color: purple;
 }
 
 .skills-container {
