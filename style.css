@@ -821,9 +821,9 @@ margin-bottom: 20px;
     height: 100%;
     }
 
-        #class-div {
-            min-height: 120vh;
-        }
+    #class-div {
+    min-height: 140vh;
+    }
 
 }
 
