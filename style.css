@@ -394,6 +394,13 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
     margin-top: 15vh; /* Adjust margin as needed */
 }
 
+.experience-image {
+    max-width: 100%;
+    height: 50%;
+    border-radius: 5em; /* Makes the image round */
+    border: 30px solid rgba(248, 248, 255, 0.3);
+    margin-top: 15vh; /* Adjust margin as needed */
+}
 
 .phs-image {
     max-width: 100%;
@@ -843,14 +850,13 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
-        #Row3Rectangle1 {
-            min-height: 70vh;
-        }
-
-        
-        #pld-div {
-            min-height: 90vh;
-        }
+    #Row3Rectangle1 {
+    min-height: 70vh;
+    }
+  
+    #pld-div {
+    min-height: 90vh;
+    }
 }
 
 
