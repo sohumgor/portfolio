@@ -6,7 +6,6 @@ display: block; /* This will make sure block level elements such as li etc stay 
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 font-family: "San Francisco Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-color:blue;
     /* text-align: center;*/
 /* padding-top: 2%; */ /*If you need some distance from top to start anything*/
 }
@@ -370,7 +369,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .profile-image {
     max-width: 100%;
-    height: 50%;
+    max-height: 50%;
     border-radius: 5em; /* Makes the image round */
     border: 30px solid rgba(248, 248, 255, 0.3);
     margin-top: 15vh; /* Adjust margin as needed */
@@ -380,7 +379,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .art-image {
     max-width: 100%;
-    height: 50%;
+    max-height: 50%;
     border-radius: 5em; /* Makes the image round */
     border: 30px solid rgba(231, 231, 231, 0.3);
     margin-top: 10vh; /* Adjust margin as needed */
@@ -389,7 +388,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .school-image {
     max-width: 100%;
-    height: 50%;
+    max-height: 50%;
     border-radius: 5em; /* Makes the image round */
     border: 30px solid rgba(248, 248, 255, 0.3);
     margin-top: 15vh; /* Adjust margin as needed */
@@ -452,7 +451,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .sundling-image {
     max-width: 100%;
-    height: 32%;
+    max-height: 32%;
     border-radius: 4em; /* Makes the image round */
     border: 30px solid rgba(161, 161, 161, 0.2);
     margin-top: 10vh; 
@@ -461,7 +460,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .walk-image {
     max-width: 100%;
-    height: 32%;
+    max-height: 32%;
     border-radius: 4em; /* Makes the image round */
     border: 30px solid rgba(161, 161, 161, 0.2);
     margin-top: 10vh; 
@@ -470,7 +469,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .sql-image {
     max-width: 100%;
-    height: 32%;
+    max-height: 32%;
     border-radius: 4em; /* Makes the image round */
     border: 30px solid rgba(248, 248, 255, 0.3);
     margin-top: 10vh; 
@@ -479,7 +478,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .acs-image {
     max-width: 40vh;
-    height: 15vh;
+    max-height: 15vh;
     margin-left: 5vh;
     /* Adjust margin as needed */
 
@@ -487,7 +486,7 @@ margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so i
 
 .pld-image {
     max-width: 40vh;
-    height: 15vh;
+    max-height: 15vh;
     margin-left: 5vh;
     /* Adjust margin as needed */
 
