@@ -799,6 +799,7 @@ body {
         display: flex; /* Flexbox layout */
         justify-content: space-between; /* Distribute items evenly */
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     
     
