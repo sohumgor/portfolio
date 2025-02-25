@@ -130,7 +130,6 @@ body {
         padding-top: 5vh;
         min-height: 100vh;
         margin: 0% auto 0% auto;
-        margin-bottom: 20px;
     }
     
     
@@ -353,7 +352,7 @@ body {
     width: 100%; /* Adjust as necessary */
     height: 100%; /* Adjust as necessary */
     
-    margin-bottom: 1em;/* Margin: Top Right Bottom Left; 3.6% is for top margin so it does not overlap with my navigation*/
+    /* Margin: Top Right Bottom Left; 3.6% is for top margin so it does not overlap with my navigation*/
     /*margin: auto;*/ /* IMP: This will make this box centered. By making margin for both left-margin and right-margin to auto */
     /* padding-top: 2.9%; */ /*IMP: This top padding is needed else my navigation bar and Rectangle 1 will overlap. This is needed since I made my navigation bar sticky by making my navigation bar 'Fixed position' */
     /* Now if you give top padding to this rectangle, all rectangles below should also be giving some padding so they dont overlap */
@@ -770,7 +769,7 @@ body {
     max-height: 200vh;
     background-color:ghostwhite;
     margin: 0% auto 0% auto;
-    margin-bottom: 20px;
+    
     /* margin: auto; */ /* IMP: This will make this box centered. By making margin for both left-margin and right-margin to auto */
     
     /* padding-top: 1%; */
@@ -792,7 +791,7 @@ body {
     width: 100%; /* Adjust as necessary */
     height: 100%; /* Adjust as necessary */
     margin: 0% auto 0% auto; /* IMP: This will make this box centered. By making margin for both left-margin and right-margin to auto */
-    margin-bottom: 20px;
+    
     /* padding-top: 5%; */
     }
     
